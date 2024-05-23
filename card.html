@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card{
+            transform-style: preserve-3d;
+            width: 230px;
+            height: 350px;
+            position: relative;
+            transition: all 0.5s;
+        }
+        .front,.back{
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border-radius: 10px;
+        }
+        .front{
+            backface-visibility: hidden;
+            z-index: 2;
+            background: linear-gradient(purple, yellow);
+        }
+        .back{
+            transform: rotateY(180deg);
+            z-index: 1;
+            background: linear-gradient(blue,yellow);
+        }
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+        .container{
+            perspective: 1000px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px 70px;
+            float: left;
+            margin: 10px;
+        }
+        .photo{
+            width: 100px;
+            height: 100px;
+            border: 1px white solid;
+            border-radius: 50%; 
+            position: relative;
+            top: -100px;
+            background-image: url("images/ammu.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: -70px;
+        }
+    h3{
+        font-size: 20px;
+        top: 140px;
+        left: 50px;
+        position: absolute;
+    }
+    h4{
+        position: absolute;
+        top: 170px;
+        left: 70px;
+        font-size: 15px;
+        color: black;
+    }
+    button{
+        position: absolute;
+        top: 250px;
+        border-radius: 10px;
+        left: 70px;
+        padding: 10px;
+        border: 0px;
+        background-color: green;
+        color: white;
+    }
+    .para p{
+        font-size: 12px;
+    }
+    .para h2{
+        font-size: 15px;
+        text-align: center;
+        color: chartreuse;
+    }
+    .social{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    </style>
+</head>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <div class="photo">
+
+                </div>
+                <div class="name">
+                    <h3>B.Varalakshmi</h3><br>
+                    <h4>Web Designer</h4><br>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="back">
+                <div class="para">
+                    <h2>Web Designning Skills</h2>
+                    <p>
+                        Web developers usually fall under one of three categories: back-end developers, front-end developers, and full-stack developers. Some web developers also work as webmasters. Let’s take a closer look at each of these roles.
+                    </p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <div class="photo">
+
+                </div>
+                <div class="name">
+                    <h3>B.Varalakshmi</h3><br>
+                    <h4>Web Designer</h4><br>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="back">
+                <div class="para">
+                    <h2>Web Designning Skills</h2>
+                    <p>
+                        Web developers usually fall under one of three categories: back-end developers, front-end developers, and full-stack developers. Some web developers also work as webmasters. Let’s take a closer look at each of these roles.
+                    </p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <div class="photo">
+
+                </div>
+                <div class="name">
+                    <h3>B.Varalakshmi</h3><br>
+                    <h4>Web Designer</h4><br>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="back">
+                <div class="para">
+                    <h2>Web Designning Skills</h2>
+                    <p>
+                        Web developers usually fall under one of three categories: back-end developers, front-end developers, and full-stack developers. Some web developers also work as webmasters. Let’s take a closer look at each of these roles.
+                    </p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <div class="photo">
+
+                </div>
+                <div class="name">
+                    <h3>B.Varalakshmi</h3><br>
+                    <h4>Web Designer</h4><br>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="back">
+                <div class="para">
+                    <h2>Web Designning Skills</h2>
+                    <p>
+                        Web developers usually fall under one of three categories: back-end developers, front-end developers, and full-stack developers. Some web developers also work as webmasters. Let’s take a closer look at each of these roles.
+                    </p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
